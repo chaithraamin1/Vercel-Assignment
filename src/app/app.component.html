@@ -1,11 +1,14 @@
 <div class="container">
-  <h1>Find and Replace Tool</h1>
-  <textarea id="textInput" placeholder="Paste or type your text here..." rows="10" cols="50"></textarea>
+  <h1 class="anim">Find and Replace Tool</h1>
+
+  <textarea id="textInput" placeholder="Type your text here..." rows="10" cols="50"></textarea>
+  
   <div class="controls">
       <input type="text" id="findText" placeholder="Find word or phrase">
       <input type="text" id="replaceText" placeholder="Replace with">
-      <button id="replaceButton" (click)="replaceContent()">Replace</button>
+      <button id="replaceButton" class="anim" (click)="replaceContent()">Replace</button>
+      <button id="clearButton" class="anim" (click)="clearText()">Clear Text</button>
   </div>
-  <button id="clearButton" (click)="clearText()">Clear Text</button>
+
   <div id="message"></div>
 </div>
